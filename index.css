@@ -1,37 +1,357 @@
-.first{
-   background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.8) 100%) ,url(Netflix\ Background\ Image.jpg);
-    width:100%;
-    height: 100vh;
-    border: 2px solid black;
-    background-size: 120%;
+html{
+    -webkit-text-size-adjust: 100%;
+    /* font-family: 'Bebas Neue', sans-serif; */
+    font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
+}
+body{
+    margin: 0px;
+    box-sizing: border-box;
+    background: #000;
+}
+/* First Page  */
+.bgimage{
+    background-image:linear-gradient(to top, rgba(0, 0, 0, 0.8) 0, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.8) 100%), url(Images/Netflix\ Background\ Image.jpg);
+    height: 700px;
+    background-size: 125%;
+    background-position: 50% 73%;
     background-repeat: no-repeat;
-    background-position: 50% 70%;
+    display: block;
 }
 
-.secound{
-    width: 100%;
-    height: 70vh;
-    border: 2px solid black;
+.navbar{
+    width: 80vw;
+    margin: 0vw 10vw 0vw 10vw;
+    height: 85px;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-logo{
+    background-image: url(Images/Netflix_Logo_PMS.png);
+    height: 60%;
+    width: 150px;
+    left: 10px;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.nav-signup{
+    margin-right: 20px;
+    border-radius: 5px;
+    color: white;
+    font-size: 0.9rem;
+    font-weight: 500;
+    min-height: 2rem;   
+}
+option{
+    color: black;
+}
+.lang{
+    text-align: center;
+    width: 130px;
+    height: 35px;
+    background: transparent;
+    width: 125px;
+
+}
+.btn-signin{
+    background: rgb(229,9,20);
+    width: 76px;
+    height: 35px;
+}
+.content{
+    color: white;
+    height: 60%;
+    margin-top: 13%;
+
+    /* display: flex; */
+    /* justify-content: center;
+    align-items: center; */
+}
+.text{
+    text-align: center;
+    display: block;
+}
+.text1{
+    font-size: 3rem;
+    font-weight: 900;
+}
+.text2{
+
+    margin-top: -10px;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+.text3{
+    margin-top: -7px;
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+.emaillabel{
+    position: relative;
+    left:110px;
+    top:14px;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: rgba(255, 255, 255, 0.7);
+}
+.inputfield{
+    display: flex;
+    justify-content: center;
+    text-align: center;
 }
 
-.third{
-    width: 100%;
-    height: 70vh;
-    border: 2px solid black;
+.iemail{
+    background: rgba(22, 22, 22, 0.7);
+    /* border-color: rgb(235, 57, 66); */
+    width: 376px;
+    color: white;
+    border-radius: 5px;
+    height: 54px;
+    font-size: 1rem;
+    margin-right: 10px;
+    border: 1px solid whitesmoke;
+
 }
-.four{
-    width: 100%;
-    height: 70vh;
-    border: 2px solid black;
+.iemail:focus{
+    border: 3px solid white;
 }
-.five{
-    width: 100%;
-    height: 70vh;
-    border: 2px solid black;
+.btngetstart{
+    /* margin-top: 3px; */
+    width: 205px;
+    background: rgb(229, 9, 20);
+    color: rgb(255, 255, 255);
+    font-size: 1.5rem;
+    font-weight: 500;
+    border-radius: 5px;
+    height: 57px; 
+    border: 0px transparent;
 }
-.six{
-    width: 100%;
-    height: 100vh;
-    border: 2px solid black;
+.btngetstart:hover{
+    transition-timing-function: cubic-bezier(0.5, 0, 0.1, 1);
+    background: rgb(193, 17, 25);
 }
 
+/* box2 */
+
+.box{
+    height: 590px;
+    color: rgb(255,255,255);
+    text-align: center;
+    border-top: 10px solid rgb(35,35,35);
+    /* background-color: pink; */
+}
+.b2content{
+    margin:0 10% 0 10%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    
+}
+.b2text{
+    text-align: left;
+}
+.b2h2{
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+.b2p{
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+.tv{
+    margin-right: -10%;
+    background-image: url(Images/Netflix_TV_Image.png);
+    height: 430px;
+    width: 580px;
+    background-size: cover;
+}
+
+.video{
+    top:22%;
+    left: 14%;
+    height: 53%;
+    width: 71%;
+    z-index: -1;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Box3  */
+
+.mobileimage{
+    background-image: url(Images/Netflix_mobile-0819.jpg);
+    height: 435px;
+    background-size: cover;
+    width: 580px;
+    padding-right: 250px;
+}
+
+.b3down{
+    height: 105px;
+    width: 320px;
+    position: relative;
+    border: 2px solid rgba(128,128,128,0.7);
+    box-shadow: 0 0 2em 0 rgb(0,0,0);
+    border-radius: 0.75rem;
+    display: flex;
+    align-items: center;
+    top: 70%;
+    left:40%;
+    background-color: #000;
+    justify-content: space-evenly;
+}
+.stgimg{
+    background-image: url(Images/Strangething_Pic.png);
+    width: 60px;
+    height: 80px;
+    background-size: cover;
+}
+.downgif{
+    background-image: url(Images/Metflix_download-icon.gif);
+    width: 50px;
+    height: 60px;
+    background-size: cover;
+}
+.b3p{
+    color: rgb(255,255,255);
+    font-weight: 500;
+    font-size: 1rem;
+    margin-bottom:0;
+}
+.b3p2{
+    margin-top:0;
+    font-size: 0.875rem;
+    font-weight: 400;
+    color: #0071eb;
+}
+.b3mtext{
+    text-align: left;
+}
+.b3content{
+    margin:0 10% 0 10%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.b3text{
+    /* padding-left: 600px; */
+    text-align: left;
+}
+
+/* Box 4  */
+
+.b4content{
+    margin: 5% 10% 0 10%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    
+}
+
+.b4text{
+    margin-top: -100px;
+    text-align: left;
+    width: 48%;
+}
+
+.b4p{
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-top: -20px;
+}
+
+.image{
+    background-image: url(Images/Netflix_pc_mobile_tab.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 580px;
+    height: 435px;
+    background-position: 0% 0%;
+    /* margin-right: 100px; */
+}
+
+.b4video{
+    top:11%;
+    left: 18%;
+    height: 53%;
+    width: 63%;
+    z-index: -1;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Box5  */
+
+.kidsimage{
+    background-image: url(Images/Netflix_Kids_Image.png);
+    height: 435px;
+    background-size: cover;
+    width: 580px;
+    padding-right: 250px;
+    margin: 0 60px 0 30px;
+}
+
+.b5text{
+    text-align: left;
+}
+
+.b5text > h2{
+    margin-bottom: 0px;
+    width: 500px;
+}
+
+/* footer  */
+
+footer{
+    border-top: 10px solid rgb(35,35,35);
+
+    height: 470px;
+}
+
+.footer{
+    margin:5% 10% 15% 10%;
+}
+
+.que{
+    display: block;
+    color: white;
+    font-size: 1rem;
+    font-weight: 400;
+}
+.que a{
+    text-decoration: underline;
+}
+.links{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    /* flex-wrap: wrap;  */
+    color: white;
+}
+.footer-link{
+    padding: 0px;
+
+}
+.footer-link  a{
+    cursor: pointer;
+    margin: 0 150px 16px 0;
+    align-self: flex-start;
+    text-align: left;
+    display: block;
+    color: rgba(255,255,255,0.7);
+    text-decoration: underline;
+}
+
+.ftext{
+    font-size: 0.875rem;
+    margin-top: 1.5rem;
+    color: rgba(255,255,255,0.7);
+    font-weight: 400;
+}

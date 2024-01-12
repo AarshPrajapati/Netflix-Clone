@@ -1,30 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <link rel="stylesheet" href="index.css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <link rel="stylesheet" href="index.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Netflix-Clone</title>
-</head>
-<body>
-    <div class="first">
-       
+  </head>
+  <body>
+   <div class="bgimage">
+      <div class="navbar">
+        <div class="nav-logo"></div>
+        <div class="nav-signup">
+          <select class="lang nav-signup">
+            <option lang="ENG" label="English" value="ENG-IN">English</option>
+            <option lang="hi" label="हिन्दी" value="hi-IN">हिन्दी</option>
+          </select>
+          <button class="btn-signin nav-signup" type="button">Sign In</button>
+        </div>
     </div>
-    <hr/>
-    <div class="secound">
+    <div class="content">
+          <div class="text">
+            <h1 class="text1">Unlimited movies, TV shows and more</h1>
+            <p class="text2">Watch anywhere. Cancel anytime.</p>
+            <p class="text3">Ready to watch? Enter your email to create or restart your membership.</p>
+          </div>
+          <div class="inputfield">
+            <label class="emaillabel">Email address</label>
+            <input  class="iemail" type="email" name="email" />
+            <button type="button" class="btngetstart">Get Started &gt;</button>
+          </div>
+    </div>
+    <div class="box box2">
+      <div class="b2content">
+      <div class="b2text">
+        <h2 class="b2h2">Enjoy on your TV</h2>
+        <p class="b2p">Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more.</p>
+      </div>
+      <div class="pcvideo">
+        <div class="tv">
+          <div class="video">
+          <video autoplay  muted loop>
+            <source src="Images/Netflix_video-tv-in-0819.m4v">
+          </video>
+        </div>
+        </div>
+       
+      </div>
+    </div>
+   </div>
 
-    </div><hr/>
-    <div class="third">
-        
-    </div><hr/>
-    <div class="four">
-        
-    </div> <hr/>
-    <div class="five">
-        
-    </div><hr/>
-     <div class="six">
-        
-    </div><hr/>
-</body>
+   <div class="box box3">
+    <div class="b3content">
+      <div class="mobileimage">
+        <div class="b3down">
+          <div class="stgimg"></div>
+          <div class="b3mtext">
+            <p class="b3p">Stranger Things</p>
+            <p class="b3p2">Downloading... </p>
+          </div>
+          <div class="downgif"></div>
+        </div>
+      </div>
+      <div class="b3text">
+        <h2 class="b2h2">Download your shows to watch offline</h2>
+        <p class="b2p">Save your favourites easily and always have something to watch.</p>
+      </div>
+    </div>
+   </div>
+
+   <div class="box box4">
+    <div class="b4content">
+      <div class="b4text">
+        <h2 class="b2h2">Watch everywhere</h2>
+        <p class="b4p">Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.</p>
+      </div>
+      <div class="b4image">
+        <div class="image">
+          <div class="b4video">
+          <video autoplay  muted loop>
+            <source src="Images/Netflix Video.m4v">
+          </video>
+        </div>
+        </div>
+      </div>
+    </div>
+   </div>
+
+   <div class="box box5">
+    <div class="b3content">
+      <div class="kidsimage">
+      </div>
+      <div class="b5text">
+        <h2 class="b2h2">Create profiles for   kids</h2>
+        <p class="b2p">Send children on adventures with their favourite characters in a space made just for them—free with your membership.</p>
+      </div>
+    </div>
+   </div>
+   <footer>
+    <div class="footer">
+      <div class="que"><p>Questions? Call <a>000-800-919-1694</a></p></div>
+      <div  class="links">
+        <ul class="footer-link">
+          <a>FAQ</a>
+          <a>Investor Relations</a>
+          <a>Privacy</a>
+          <a>Speed Test</a>     
+          </ul>
+          <ul class="footer-link">
+          <a>Help Centre</a>
+          <a>Jobs</a>
+          <a>Cookie Preferences</a>
+          <a>Legal Notices</a>
+        </ul>
+        <ul class="footer-link">
+          <a>Account</a>
+          <a>Ways to Watch</a>
+          <a>Corporate Information</a>
+          <a>Only on Netflix</a>
+        </ul>
+        <ul class="footer-link">
+          <a>Media Centre</a>
+          <a>Terms of Use</a>
+          <a>Contact Us</a>    
+        </ul>   
+      </div>
+      <div class="flang">
+        <select class="lang nav-signup">
+          <option lang="ENG" label="English" value="ENG-IN">English</option>
+          <option lang="hi" label="हिन्दी" value="hi-IN">हिन्दी</option>
+        </select>
+      </div>
+      <p class="ftext">Netflix India</p>
+    </div>
+   </footer>
+  </body>
 </html>
